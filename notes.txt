@@ -1,0 +1,9 @@
+color pallet
+
+Othello "#FFA600"
+Iago #D11033
+Desdemona #5E3781
+Cassio #47682C
+
+other 1 #077187
+other 2 #DB8180
