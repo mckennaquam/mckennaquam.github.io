@@ -65,14 +65,14 @@
     <section class="container-fluid px-0 py-0" style="margin-top:150px">
         <div>
                   <h1 style="text-align:center; font-weight: bold;"> Shakespeare Final Project </h1> 
-                  <h3 style="text-align:center;"> A quantitative analysis of Othello</h2>   
+                  <h3 style="text-align:center;"> A Quantitative Exploration of Othello</h2>   
                   <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="othello_header.jpg" alt="Othello at Portland Center Stage in 2014"> 
                   <p style="text-align: center;">Othello at Portland Center Stage in 2014</p>  
             </div>    
     </section>
     
 
-<!-- Section 2: Motivation -->    
+<!-- Section 2: Intro -->    
 
         <section id="introduction" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
@@ -82,28 +82,58 @@
     </section>
 
 
-    <!-- Section 3: Data -->  
+    <!-- Section 3: Words Spoken -->  
     <section id="words_spoken" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Words Spoken </h2> 
             <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">hello</p>      
         </div>
+        <div>   
+            <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="titular_chart.png" alt="Line chart comparing words spoken ny titular characters in Shakespeare plays"> 
+      </div> 
+      <div>   
+        <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="titular_iago.png" alt="Line chart comparing words spoken ny titular characters and Iago in Shakespeare plays"> 
+  </div> 
+
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <iframe 
+                src="mcs_word_count.html" 
+                style="border: none; width: 100%; max-width: 1000px; height: 500px;"></iframe>
+          </div>
     </section>
 
-    <!-- Section 4: Task Analysis -->  
+    <!-- Section 4: Sentiment Analysis -->  
     <section id="sentiment_analysis" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Sentiment Analysis </h2> 
             <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;"> hello</p>      
         </div>
-        <div id="vis"></div>
-            <script type="text/javascript">
-            vegaEmbed("#vis", "C:/Users/mckennaquam/Desktop/ENGL 1600/final_proj/moor_chart_sentiment_speaker.json");
-        </script>
+        <div>   
+            <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="sentiment_example.png" alt=""> 
+      </div> 
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <iframe 
+                src="all_sentiment_points.html" 
+                style="border: none; width: 100%; max-width: 1050px; height: 600px;"></iframe>
+          </div>
+          <div>   
+            <img style="display:block; margin-left:auto; margin-right:auto; width:45%" src="compound_cum_sentiment.png" alt="Cummulative sentiment scores for all sentences spoken by Iago and Othello"> 
+      </div> 
+      <div>   
+        <img style="display:block; margin-left:auto; margin-right:auto; width:45%" src="neg_sentiment.png" alt="Cummulative negative scores for all sentences spoken by Iago and Othello"> 
+  </div> 
+  <div>   
+    <img style="display:block; margin-left:auto; margin-right:auto; width:40%" src="char_10.png" alt="Bar chart for frequency of words spoken by 10 characters in Othello"> 
+</div> 
+        <div style="display: flex; justify-content: center; padding: 20px;">
+            <iframe 
+                src="moor_chart_sentiment_speaker.html" 
+                style="border: none; width: 100%; max-width: 650px; height: 500px;"></iframe>
+          </div>
     </section>
 
 
-    <!-- Section 5: Data Analysis -->  
+    <!-- Section 5: conclusions -->  
     <section id="conclusions" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Conclusions </h2> 
@@ -112,7 +142,7 @@
     </section>
 
 
-    <!-- Section 6: Design Process -->  
+    <!-- Section 6: bibliography -->  
     <section id="bibliography" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Bibliography </h2> 
@@ -122,7 +152,7 @@
     </section>
 
 
-<!-- Section 7: Data Visualization(s) -->  
+<!-- Section 7: appendix data cleaning -->  
     <section id="appendix_data_cleaning" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Appendix: Data Cleaning </h2> 

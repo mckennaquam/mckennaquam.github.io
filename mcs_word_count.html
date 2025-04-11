@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "hconcat": [{"mark": {"type": "point"}, "encoding": {"color": {"field": "speaker", "scale": {"domain": ["Othello", "Iago", "Desdemona", "Cassio"], "range": ["#FFA600", "#D11033", "#5E3781", "#47682C"]}, "title": "Character", "type": "nominal"}, "opacity": {"condition": {"param": "param_1", "value": 1}, "value": 0.1}, "size": {"field": "mean", "title": "Avg Line Length", "type": "quantitative"}, "tooltip": [{"field": "speaker", "title": "Character", "type": "nominal"}, {"field": "act_scene", "title": "Act, Scene", "type": "nominal"}, {"field": "count", "title": "Count of Lines", "type": "quantitative"}, {"field": "mean", "title": "Avg Length of Line", "type": "quantitative"}], "x": {"field": "act_scene", "title": "Act, Scene", "type": "nominal"}, "y": {"field": "count", "title": "Count of Lines", "type": "quantitative"}}, "name": "view_1", "title": "Count of Lines & Average Length of Line", "width": 350}, {"mark": {"type": "bar"}, "encoding": {"color": {"field": "speaker", "scale": {"domain": ["Othello", "Iago", "Desdemona", "Cassio"], "range": ["#FFA600", "#D11033", "#5E3781", "#47682C"]}, "title": "Character", "type": "nominal"}, "x": {"field": "act_scene", "title": "Act, Scene", "type": "nominal"}, "y": {"field": "sum", "stack": "normalize", "title": "Words Spoken", "type": "quantitative"}}, "name": "view_2", "title": "% of Words Spoken in the Scene", "transform": [{"filter": {"param": "param_1"}}], "width": 350}], "data": {"name": "data-6a76b4a308f8f75f25c424e08cab87f7"}, "params": [{"name": "param_1", "select": {"type": "point", "clear": false, "fields": ["speaker"], "toggle": "event.shiftKey"}, "bind": "legend", "views": ["view_1", "view_2"]}], "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-6a76b4a308f8f75f25c424e08cab87f7": [{"speaker": "Cassio", "act_scene": "1.2", "count": 6, "mean": 17.33, "sum": 104}, {"speaker": "Cassio", "act_scene": "2.1", "count": 13, "mean": 27.23, "sum": 354}, {"speaker": "Cassio", "act_scene": "2.3", "count": 36, "mean": 16.72, "sum": 602}, {"speaker": "Cassio", "act_scene": "3.1", "count": 8, "mean": 18.5, "sum": 148}, {"speaker": "Cassio", "act_scene": "3.3", "count": 4, "mean": 18.75, "sum": 75}, {"speaker": "Cassio", "act_scene": "3.4", "count": 9, "mean": 30.67, "sum": 276}, {"speaker": "Cassio", "act_scene": "4.1", "count": 17, "mean": 11.06, "sum": 188}, {"speaker": "Cassio", "act_scene": "5.1", "count": 12, "mean": 8.17, "sum": 98}, {"speaker": "Cassio", "act_scene": "5.2", "count": 5, "mean": 19.8, "sum": 99}, {"speaker": "Desdemona", "act_scene": "1.3", "count": 3, "mean": 71.33, "sum": 214}, {"speaker": "Desdemona", "act_scene": "2.1", "count": 16, "mean": 12.44, "sum": 199}, {"speaker": "Desdemona", "act_scene": "2.3", "count": 1, "mean": 5.0, "sum": 5}, {"speaker": "Desdemona", "act_scene": "3.3", "count": 20, "mean": 26.8, "sum": 536}, {"speaker": "Desdemona", "act_scene": "3.4", "count": 36, "mean": 15.72, "sum": 566}, {"speaker": "Desdemona", "act_scene": "4.1", "count": 12, "mean": 6.42, "sum": 77}, {"speaker": "Desdemona", "act_scene": "4.2", "count": 28, "mean": 16.14, "sum": 452}, {"speaker": "Desdemona", "act_scene": "4.3", "count": 20, "mean": 21.05, "sum": 421}, {"speaker": "Desdemona", "act_scene": "5.2", "count": 28, "mean": 9.71, "sum": 272}, {"speaker": "Iago", "act_scene": "1.1", "count": 13, "mean": 63.38, "sum": 824}, {"speaker": "Iago", "act_scene": "1.2", "count": 9, "mean": 21.56, "sum": 194}, {"speaker": "Iago", "act_scene": "1.3", "count": 12, "mean": 63.92, "sum": 767}, {"speaker": "Iago", "act_scene": "2.1", "count": 22, "mean": 57.09, "sum": 1256}, {"speaker": "Iago", "act_scene": "2.3", "count": 37, "mean": 43.92, "sum": 1625}, {"speaker": "Iago", "act_scene": "3.1", "count": 2, "mean": 17.0, "sum": 34}, {"speaker": "Iago", "act_scene": "3.2", "count": 1, "mean": 7.0, "sum": 7}, {"speaker": "Iago", "act_scene": "3.3", "count": 62, "mean": 25.81, "sum": 1600}, {"speaker": "Iago", "act_scene": "3.4", "count": 3, "mean": 24.33, "sum": 73}, {"speaker": "Iago", "act_scene": "4.1", "count": 50, "mean": 18.34, "sum": 917}, {"speaker": "Iago", "act_scene": "4.2", "count": 24, "mean": 18.08, "sum": 434}, {"speaker": "Iago", "act_scene": "5.1", "count": 28, "mean": 20.39, "sum": 571}, {"speaker": "Iago", "act_scene": "5.2", "count": 10, "mean": 7.7, "sum": 77}, {"speaker": "Othello", "act_scene": "1.2", "count": 11, "mean": 23.73, "sum": 261}, {"speaker": "Othello", "act_scene": "1.3", "count": 10, "mean": 86.6, "sum": 866}, {"speaker": "Othello", "act_scene": "2.1", "count": 4, "mean": 54.5, "sum": 218}, {"speaker": "Othello", "act_scene": "2.3", "count": 10, "mean": 40.6, "sum": 406}, {"speaker": "Othello", "act_scene": "3.2", "count": 2, "mean": 17.5, "sum": 35}, {"speaker": "Othello", "act_scene": "3.3", "count": 67, "mean": 21.57, "sum": 1445}, {"speaker": "Othello", "act_scene": "3.4", "count": 20, "mean": 16.0, "sum": 320}, {"speaker": "Othello", "act_scene": "4.1", "count": 53, "mean": 12.47, "sum": 661}, {"speaker": "Othello", "act_scene": "4.2", "count": 21, "mean": 23.29, "sum": 489}, {"speaker": "Othello", "act_scene": "4.3", "count": 3, "mean": 11.33, "sum": 34}, {"speaker": "Othello", "act_scene": "5.1", "count": 3, "mean": 21.0, "sum": 63}, {"speaker": "Othello", "act_scene": "5.2", "count": 69, "mean": 20.46, "sum": 1412}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
