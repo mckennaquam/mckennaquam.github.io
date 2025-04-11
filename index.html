@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Import Vega, Vega-lite and Vega-embed-->  
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">   
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="template.css">
+
+    <title>DS4200 Website Template</title>
+</head>
+
+<body>
+ <!-- Customizing the navigation bar -->
+    <nav id="mainNavbar" class="navbar navbar-light navbar-expand-md py-0  fixed-top">
+
+ <!-- Adding the College name to the navigation bar -->
+        <a href="https://www.folger.edu/explore/shakespeares-works/othello/read/" class="navbar-brand"><img src=othello_logo.png style="width:180px;height:60px"/></a>
+
+ <!-- Adding navigation tab names to the navigation bar. This is done as an unordered list. Each list element is a navigation bar element. For each, I added an <a></a> tag which will be used to direct to the appropriate section on click. You can add new items incase you want to add a new section in your webpage by simply copy pasting one of the list items. Make sure to correctly link it to the section that it corresponds to.-->       
+        <div class="collapse navbar-collapse" id="navLinks">
+
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="#introduction" class="nav-link">Introduction</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#words_spoken" class="nav-link">Words Spoken</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sentiment_analysis" class="nav-link">Sentiment Analysis</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#conclusions" class="nav-link">Conclusion</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#bibliography" class="nav-link">Bibliography</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#appendix_data_cleaning" class="nav-link">Appendix: Data Cleaning</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- Section 1: Project title, group ID, group members names, and an optional project image goes here -->    
+    <section class="container-fluid px-0 py-0" style="margin-top:150px">
+        <div>
+                  <h1 style="text-align:center; font-weight: bold;"> Shakespeare Final Project </h1> 
+                  <h3 style="text-align:center;"> A quantitative analysis of Othello</h2>   
+                  <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="othello_header.jpg" alt="Othello at Portland Center Stage in 2014"> 
+                  <p style="text-align: center;">Othello at Portland Center Stage in 2014</p>  
+            </div>    
+    </section>
+    
+
+<!-- Section 2: Motivation -->    
+
+        <section id="introduction" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Introduction </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">introduction</p>      
+        </div>    
+    </section>
+
+
+    <!-- Section 3: Data -->  
+    <section id="words_spoken" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Words Spoken </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;">hello</p>      
+        </div>
+    </section>
+
+    <!-- Section 4: Task Analysis -->  
+    <section id="sentiment_analysis" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Sentiment Analysis </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;"> hello</p>      
+        </div>
+        <div id="vis"></div>
+            <script type="text/javascript">
+            vegaEmbed("#vis", "C:/Users/mckennaquam/Desktop/ENGL 1600/final_proj/moor_chart_sentiment_speaker.json");
+        </script>
+    </section>
+
+
+    <!-- Section 5: Data Analysis -->  
+    <section id="conclusions" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Conclusions </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;"> hello.</p>      
+        </div>
+    </section>
+
+
+    <!-- Section 6: Design Process -->  
+    <section id="bibliography" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Bibliography </h2> 
+            <p style="text-align: center; font-size:; margin-left:auto; margin-right:auto; width:50%; text-align: justify;"> hello.</p>   
+        
+        </div>
+    </section>
+
+
+<!-- Section 7: Data Visualization(s) -->  
+    <section id="appendix_data_cleaning" class="container-fluid px-0" style="margin-top:50px"></section>
+        <div>
+            <h2  style="text-align:center; font-weight: bold;"> Appendix: Data Cleaning </h2> 
+        </div>    
+            
+
+       
+    </section> 
+      
+   
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+</body>
+
+</html>
