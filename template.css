@@ -1,0 +1,25 @@
+#introduction,
+#words_spoken,
+#sentiment_analysis,
+#conclusions,
+#bibliography,
+#appendix_data_cleaning {
+scroll-margin-top: 100px;
+}
+
+.tabbed-paragraph {
+    width: 60%;
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5;       
+    margin-bottom: 1em;
+}
+
+.side-text {
+    width: 50%;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5; 
+    padding-left: 20px;      
+}
