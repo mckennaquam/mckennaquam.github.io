@@ -84,7 +84,7 @@
                 that other characters show towards Othello, and you feel his own state deteriorating, but how can you prove these things 
                 quantitatively? Can you visualize them? For this final project I wanted to show how data science can interact with 
                 literature to give us deeper understandings of a text from a quantitative perspective. As someone who has always been 
-                passionate about the intersections of art and stem I thought this would be a good opportunity to present to others how 
+                passionate about the intersections of art and math I thought this would be a good opportunity to present to others how 
                 visualization and machine learning can be used as interpretation tools. Specifically I wanted to show how little space 
                 Othello is afforded to speak in his own play, and I wanted to investigate the sentiment of the lines in Othello to show 
                 how the words of the text reflect the plot.  </p>      
@@ -134,7 +134,9 @@
         
                 
           </div>
-          <p style="width: 60%; margin: 0 auto; margin-bottom: 1em;"> <strong>This graph is interactive! Shift click the legend to compare the words spoken by different combinations of characters in Othello. </strong></p>
+          <p style="width: 60%; margin: 0 auto; margin-bottom: 1em;"> <strong>This graph is interactive! Shift click the legend to compare the words spoken by different combinations of characters in Othello. 
+            There is a tooltip on each point of the scatter graph to provide more detail on the characters' lines.
+          </strong></p>
           <div>
           <p class="tabbed-paragraph"> The scene where a character has the most lines is Othello in the final scene of the play with 69 
             lines with an average of 20 words per line (line refers to uninterrupted speaking not line number in the text). 
@@ -217,7 +219,7 @@
         
   </div>
 
-  <div>   
+  <div style="margin-bottom: 1em;">   
     <div style="display: flex; align-items: flex-start; width: 70%; margin: 0 auto;">   
         <img style="width: 50%;" src="neg_sentiment.png" alt="Cummulative sentiment scores for all sentences spoken by Iago and Othello"> 
         <div class="side-text">
@@ -236,6 +238,10 @@
   </div>
 </div>
 
+<div><p class="tabbed-paragraph"> The next 2 graphs deal with the sentiment of other characters towards Othello. I have choosen to investiage the use of the word
+    moor as that word is only ever used to refer to Othello as he is the only (canonical) person on color in the play therefor all instances
+    of it in the refer to him.</p>
+</div>
 
 <div>   
     <div style="display: flex; align-items: flex-start; width: 70%; margin: 0 auto;">   
@@ -257,7 +263,7 @@
         <div style="display: flex; justify-content: center; padding: 20px;">
             <iframe 
                 src="moor_chart_sentiment_speaker.html" 
-                style="border: none; width: 100%; max-width: 650px; height: 500px;"></iframe>
+                style="border: none; width: 100%; max-width: 700px; height: 475px;"></iframe>
           </div>
 
 <div>
@@ -281,7 +287,7 @@
             <h2  style="text-align:center; font-weight: bold;"> Conclusions </h2> 
             <p class="tabbed-paragraph"> Othello, despite being the titular character, speaks less than his antagonist Iago. 
                 We can see how Iago’s speech infects Othello’s thinking as the negative sentiment of Othello’s 
-                line increases as the play goes on. Othello, despite having the play named after him, is often not addressed 
+                speech increases as the play goes on. Othello, despite being the titular character, is often not addressed 
                 by his name by the other characters. Othello is not afforded the same space to express or respect that other characters 
                 like Hamlet or Richard the III are. The play should be centered around Othello’s experiences, Othello’s story, 
                 but instead it is centered around other characters actions. </p>   
@@ -322,8 +328,8 @@
                 I then processed this txt into a csv file so I could process it through python’s date manipulation library (pandas) and a visualization library (altair). 
                 I have 2 versions of the csv. One of them is divided by lines and the other is divided by sentences (I split the text any time there was a . ! or ?). 
                 For the basic analysis like cumulative words spoken or mean line length I use the file divided by lines, but for the sentiment analysis I use the csv divided sentence 
-                as the sentiment of a line can change sentence to sentence. As well sentiment analysis works better with shorter phrases. <br />
-                Stage directions have been discarded. </p>
+                as the sentiment of a line can change sentence to sentence. As well sentiment analysis works better on full sentences over calauses which is why I 
+                didn't seperate by comma. Stage directions have been discarded. </p>
         </div>    
             
     </section> 
