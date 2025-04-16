@@ -78,14 +78,16 @@
         <section id="introduction" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Introduction </h2> 
-            <p class="tabbed-paragraph"> When reading Othello you can feel that Othello gets less time to 
-                speak his mind than other titular characters we studied in this class like Hamlet and Richard III. Whereas Iago who is the antagonist of the story gets to speak 
-                his thoughts to the audience frequently. As you journey through the play you can see the disrespect that other characters show towards Othello, and you feel his 
-                own state deteriorating, but how can you prove these things quantitatively? Can you visualize them? For this final project I wanted to show how data science can 
-                interact with literature to give us deeper understandings of a text from a quantitative perspective. As someone who has always been passionate about the 
-                intersections of art and stem I thought this would be a good opportunity to present to others how visualization and machine learning can be used as interpretation tools. 
-                Specifically I wanted to show how little space Othello is afforded to speak in his own play, and I wanted to investigate the sentiment of the lines in Othello to show 
-                how the words of the text reflect the plot. </p>      
+            <p class="tabbed-paragraph">When reading Othello you can feel that Othello gets less time to speak his mind than other 
+                titular characters we studied in this class like Hamlet and Richard III. Whereas Iago who is the antagonist of the 
+                story gets to speak his thoughts to the audience frequently. As you journey through the play you can see the disrespect 
+                that other characters show towards Othello, and you feel his own state deteriorating, but how can you prove these things 
+                quantitatively? Can you visualize them? For this final project I wanted to show how data science can interact with 
+                literature to give us deeper understandings of a text from a quantitative perspective. As someone who has always been 
+                passionate about the intersections of art and stem I thought this would be a good opportunity to present to others how 
+                visualization and machine learning can be used as interpretation tools. Specifically I wanted to show how little space 
+                Othello is afforded to speak in his own play, and I wanted to investigate the sentiment of the lines in Othello to show 
+                how the words of the text reflect the plot.  </p>      
         </div>    
     </section>
 
@@ -98,21 +100,30 @@
         <div>   
             <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="titular_chart.png" alt="Line chart comparing words spoken ny titular characters in Shakespeare plays"> 
             <p class="tabbed-paragraph">Hamlet, Richard III, and Othello are named after the a character of the play, 
-                however unlike Hamlet and Richard III, the titular character of Othello is not the main character. Compare the cumulative words spoken by each of these characters shows how Othello trails behind the other characters. 
-                By the end of their respective plays Hamlet has spoken almost double the amount of words Othello has (11537 words vs 8789 words)
+                however unlike Hamlet and Richard III, the titular character of Othello is not the main character. 
+                Compare the cumulative words spoken by each of these characters shows how Othello trails behind the other characters. 
+                By the end of their respective plays Hamlet has spoken almost double the amount of words Othello has 
+                (11537 words vs 8789 words).
             </p>
       </div> 
 
       <div>   
         <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="titular_iago.png" alt="Line chart comparing words spoken ny titular characters and Iago in Shakespeare plays"> 
         <p class="tabbed-paragraph"> When reading Othello it is noticeable how we spend more time and space with other characters, 
-            specifically the play’s antagonist Iago. Unlike Hamlet where we see Hamlet take actions to affect the plot we really only see Othello react to the plot. 
-            The plot is instead being driven by Iago. Throughout the play the audience is given deep insight into Iago’s plans and motivations through his monologues and asides to other characters, 
-            a privilege which is not afforded to Othello. <br />
-            Iago and Othello speak the exact same number of time in the play (273) however Iago both appears in more scenes and has longer lines.
-             Othello does have the longest line in the play at 344 words long, his speech to congress about the courtship of Desdemona.  <br />
-            This project is an attempt to visualize and explore how Othello is erased from his own story. I present graphs which track the arc of the main character’s 
-            dialogue throughout the play as well as using the natural language processing technique of sentiment analysis to examine how character’s attitudes change across the play. 
+            specifically the play’s antagonist Iago. Unlike Hamlet where we see Hamlet take actions to affect the plot we really only 
+            see Othello react to the plot. The plot is instead being driven by Iago. Throughout the play the audience is given deep 
+            insight into Iago’s plans and motivations through his monologues and asides to other characters, a privilege which is not 
+            afforded to Othello. </p>
+            
+            <p class="tabbed-paragraph"> 
+                Iago and Othello speak the exact same number of lines in the play (273), however Iago both appears in more scenes 
+                and has longer lines. Othello does have the longest line in the play at 344 words long, his speech to congress about 
+                the courtship of Desdemona.
+            </p>
+            <p class="tabbed-paragraph"> 
+                This project is an attempt to visualize and explore how Othello is erased from his own story. 
+                I present graphs which track the arc of the main character’s dialogue throughout the play as well as using the natural 
+                language processing technique of sentiment analysis to examine how character’s attitudes change across the play.
             </p>
   </div> 
 
@@ -120,19 +131,31 @@
             <iframe 
                 src="mcs_word_count.html" 
                 style="border: none; width: 100%; max-width: 1000px; height: 400px;"></iframe>
+        
                 
           </div>
-          <p class="tabbed-paragraph"> The scene where a character has the most lines is Othello 
-            in the final scene of the play with 69 lines with an average of 20 words per line. Othello also has the greatest average length of line in a scene with an average of 86 words 
-            over 10 lines in 1.3, the high average is due to his monologue to the senators about his courtship with Desdemona. <br />
-            The characters with the most lines in Othello are Othello, Iago, Desdemona, and Cassio (in that order). The plots beside show their line counts, average line length, 
-            as well as the percentage of the words in the scene which they speak. Using the legend you can select which characters you would like to highlight (shift click to select multiple characters). 
-            Interestingly looking at scene where both Othello and Iago speak we can see that out of the 11 scenes that they appear in together Othello speaks more in 6 of them. 
-            However summing the words Othello speaks in this scene and diving by the sum of words both character speak in this scene shows that Othello speaks 45% of the words in their 
-            shared scenes. This means that Iago is speaking more to Othello that Othello is to him. These numbers are congruent with the plot of the play as Iago needs Othello to listen 
-            to his Iago’s lies about Cassio and Desdemona; the disparity between Othello speaking a greater number of scenes but Iago speaking a greater amount in their scenes exemplifies 
-            Othello’s role as a reactor in the plot
+          <p style="width: 60%; margin: 0 auto; margin-bottom: 1em;"> <strong>This graph is interactive! Shift click the legend to compare the words spoken by different combinations of characters in Othello. </strong></p>
+          <div>
+          <p class="tabbed-paragraph"> The scene where a character has the most lines is Othello in the final scene of the play with 69 
+            lines with an average of 20 words per line (line refers to uninterrupted speaking not line number in the text). 
+            Othello also has the greatest average length of line in a scene with an average of 86 words over 10 lines in 1.3, 
+            the high average is due to his monologue to the senators about his courtship with Desdemona.
             </p>
+            <p class="tabbed-paragraph"> 
+                The characters with the most lines in Othello are Othello, Iago, Desdemona, and Cassio (in that order). 
+                The plots beside show their line counts, average line length, as well as the percentage of the words in the scene 
+                which they speak out of the 4 main characters. 
+                </p>
+            <p class="tabbed-paragraph"> 
+                Interestingly looking at scenes where both Othello and Iago speak we can see that out of the 11 scenes 
+                that they appear in together Othello speaks more in 6 of them. However, summing the words Othello speaks in 
+                this scene and dividing by the sum of words both characters speak in this scene shows that Othello speaks 45% 
+                of the words in their shared scenes. This means that Iago is speaking more to Othello than Othello is to Iago. 
+                These numbers are congruent with the plot of the play as Iago needs Othello to listen to his lies about Cassio 
+                and Desdemona; the disparity between Othello speaking a greater number of scenes with Iago speaking a greater amount 
+                in their scenes exemplifies Othello’s reactionary role in the plot.
+                </p>
+        </div>
           
     </section>
 
@@ -140,12 +163,15 @@
     <section id="sentiment_analysis" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Sentiment Analysis </h2> 
-            <p class="tabbed-paragraph"> Sentiment analysis is a popular technique used in 
-                natural language processing. A sentiment analyzer is a function which when given a sentence uses several machine learning techniques (naive bayes, maximum entropy, 
-                and support vector machines) to classify a sentence as having positive, negative, or neutral sentiment. I am using a sentiment analyzer for python called VADER. 
-                It is very powerful being able to handle negations (“not good”) and degree modifiers (“kinda good” vs “very good”).  I combines the positive, neutral, and 
-                negative scores into one compound score which ranges from -1 to 1. Here are 2 example sentences from Othello. You can see in the second sentence even though “danger” 
-                and “pity” are mentioned the analyzer is able to determine that the overall sentiment of the sentence is positive.</p>      
+            <p class="tabbed-paragraph"> Sentiment analysis is a popular technique used in natural language processing. 
+                A sentiment analyzer is a function which when given a sentence uses several machine learning techniques 
+                (naive bayes, maximum entropy, and support vector machines) to classify a sentence as having positive, 
+                negative, or neutral sentiment. I am using a sentiment analyzer for python called VADER. It is very powerful 
+                being able to handle negations (“not good”) and degree modifiers (“kinda good” vs “very good”). I combine the positive, 
+                neutral, and negative scores into one compound score which ranges from -1 to 1. Here are 2 example sentences from Othello. 
+                In the second example you can see that even though “danger” and “pity” are mentioned the analyzer is able to determine 
+                that the overall sentiment of the sentence is positive. 
+            </p>      
         </div>
         <div>   
             <img style="display:block; margin-left:auto; margin-right:auto; width:50%" src="sentiment_example.png" alt=""> 
@@ -156,25 +182,35 @@
                 style="border: none; width: 100%; max-width: 1050px; height: 600px;"></iframe>
           </div>
 
-          <p class="tabbed-paragraph"> While this graph does not show any clear trends in sentiment 
-            analysis for the whole of Othello, I didn’t expect that it would. This visualization was more intended as a fun interaction piece as well as an introduction to the idea of 
-            sentiment scores.</p>
-            <p class="tabbed-paragraph"> Something interesting I noticed exploring this graph was the trend for shorter sentences in act 5 of Othello. As the plot is heating to it makes sense that characters would 
-            start speaking faster, and with more urgency than the long prose of the previous acts. In fact the mean number of words in a sentence decreases for each act: starting at 12,
-             then 11, 10, 8, and finally 7 in act 5.
+        </div>
+        <p style="width: 60%; margin: 0 auto; margin-bottom: 1em;"> <strong>This graph is interactive! Mouse over the points to see what 
+            line they represent as well as the scene it is contained in and the character that speaks it. You can filter the points by 
+            act by shift clicking on the legend. </strong></p>
+        <div>
+
+          <p class="tabbed-paragraph"> While this graph does not show any clear trends in sentiment analysis for the whole of Othello, 
+            I didn’t expect that it would. This visualization was more intended as a exploratory interaction piece as well as an 
+            introduction to the idea of sentiment scores.</p>
+            <p class="tabbed-paragraph"> Something I noticed exploring this graph was the trend for shorter sentences 
+                in act 5 of Othello. As the tension in the plot is increasing it makes sense that characters would start speaking faster,
+                 and with more urgency contrasted with the long prose of the previous acts. In fact the mean number of words in a 
+                 sentence decreases for each act: starting at 12, then 11, 10, 8, and finally 7 in act 5.
             </p>
          
       <div>   
         <div style="display: flex; align-items: flex-start; width: 70%; margin: 0 auto;">   
             <img style="width: 50%;" src="compound_cum_sentiment.png" alt="Cummulative sentiment scores for all sentences spoken by Iago and Othello"> 
         <div class="side-text">
-            <p>Another reason that plotting all the sentiment scores on a graph fails to provide meaningful insight is the range for a sentiment score if from -1 (most negative) to 1 
-                (most positive) which is not a wide range of values. If we accumulate sentiment scores for a character we can get an idea of the that character arc through their dialogue 
-                as it progresses to more negative or positive sentiment.</p>
-            <p>This chart plots Iago and Othello’s cumulative sentiment thought the play. We can see how Iago starts the play taking his score into the negative as he tells the audience 
-                about his hatred of Othello and Cassio, and then around the start of the second act we see it climb upwards as he puts his revenge into action and starts willing. 
-                Conversely Othello starts the play on an upwards trajectory of sentiment but as Iago’s lies start to influences him and his speech until his sentiment falls beneath Iago’s 
-                in act 4.</p>
+            <p>Another reason that plotting all the sentiment scores on a graph fails to provide meaningful insight is the 
+                range for a sentiment score is from -1 (most negative) to 1 (most positive) which is not a wide range of values. 
+                If we accumulate sentiment scores for a character we can get an idea of that character’s arc through their dialogue
+                 as it progresses to more negative or positive sentiment.</p>
+            <p>This chart plots Iago and Othello’s cumulative sentiment throughout the play. 
+                We can observe how Iago starts the play taking his cumulative sentiment into the negative as he tells the audience 
+                about his hatred of Othello and Cassio, and then around the start of the second act we see it climb upwards as he 
+                puts his revenge into action and starts winning over his enemies. Conversely Othello starts the play on an upwards 
+                trajectory of sentiment but as Iago’s lies start to influence him and his speech until his sentiment falls beneath 
+                Iago’s in act 4. </p>
         </div>
 
       </div>
@@ -185,11 +221,14 @@
     <div style="display: flex; align-items: flex-start; width: 70%; margin: 0 auto;">   
         <img style="width: 50%;" src="neg_sentiment.png" alt="Cummulative sentiment scores for all sentences spoken by Iago and Othello"> 
         <div class="side-text">
-            <p>We see a similar trend in sentiment for Iago and Othello’s negative sentiment scores. Negative sentiment is between 0-1 for 
-                each line so line for cumulative negative sentiment cannot go down. In this graph we can see that Othello’s negative sentiment has outpaced Iago’s by the end of the play. 
-                In fact they both end the play at exactly a cumulative sum of 70 negative magnitude. </p>
-                <p> Often analysis of Othello thinks of him as the jealous party, but rather I think that Iago is the jealous one: jealous of Othello station, humility, and respect. 
-                By the end of the play Iago has dragged Othello down to his jealous state, a reading that this sentiment analysis supports.             
+            <p>We see a similar trend in sentiment for Iago and Othello’s negative sentiment scores. 
+                Negative sentiment is between 0-1 for each line so the line for cumulative negative sentiment cannot go down. 
+                In this graph we can see that Othello’s negative sentiment has outpaced Iago’s by the end of the play. 
+                In fact they both end the play at exactly a cumulative sum of 70 negative magnitude.
+            </p>
+                <p> Often analysis of Othello thinks of him as the jealous party, 
+                    but rather I think that Iago is the jealous one: jealous of Othello station, of his humility, and his courtship of Desdemona. 
+                    By the end of the play Iago has dragged Othello down to his jealous state, a reading that this sentiment analysis supports.             
                 </p>
 
         </div>
@@ -204,21 +243,35 @@
         <img style="width: 50%;" src="char_10.png" alt="Cummulative sentiment scores for all sentences spoken by Iago and Othello"> 
         
         <div class="side-text">
-            <p>The word “Moor” is spoken by 10 unique characters in 52 times in Othello. For perspective the word “Cassio” is spoken by 
-                10 unique characters, meaning that Othello is addressed as Moor by the same amount of characters who address Cassio in the play.</p>
-            <p>While the word Othello is spoken by 11 characters in the play, one of those characters is Othello himself. The refusal to call Othello by his name is the reminder 
-                that even with his status as a general, his identity as a person of color will always other him from the rest of the figures in the play.</p>
+            <p>The word “Moor” is spoken by 10 unique characters 52 times in Othello. For perspective the word “Cassio” is spoken 
+                by 10 unique characters, meaning that Othello is addressed as Moor by the same amount of characters who address 
+                Cassio in the play.</p>
+            <p>While the word Othello is spoken by 11 characters in the play, one of those characters is Othello himself. 
+                The refusal to call Othello by his name is the reminder that even with his status as a general, 
+                his identity as a person of color will always distinguish him from the rest of the figures in the play.</p>
         </div>
 
     </div>
 </div>
-
 
         <div style="display: flex; justify-content: center; padding: 20px;">
             <iframe 
                 src="moor_chart_sentiment_speaker.html" 
                 style="border: none; width: 100%; max-width: 650px; height: 500px;"></iframe>
           </div>
+
+<div>
+    <p style="width: 60%; margin: 0 auto; margin-bottom: 1em;"> <strong> This graph is interactive! Mouse over the points to see what line they represent as well as the scene it is contained in and the character that speaks it. You can filter the points by character speaking by shift clicking on the bars of the bar chart. </strong></p>
+    <p class="tabbed-paragraph"> 
+        Looking into the instances where Othello is referred to as moor in the play, 
+        the character who addresses him like that the most is obviously Iago who clearly does not have respect for Othello. 
+        Interestingly the sentiment analyzer classified around 70% of the sentences with Moor as positive which is odd as it 
+        is not a positive term. This could be a side effect of using a classifier which was created and trained on data from social 
+        media rather than Shakespearean english.  
+    </p>
+
+</div>
+
     </section>
 
 
@@ -226,14 +279,18 @@
     <section id="conclusions" class="container-fluid px-0" style="margin-top:50px"></section>
         <div>
             <h2  style="text-align:center; font-weight: bold;"> Conclusions </h2> 
-            <p class="tabbed-paragraph"> When reading or watching Othello the audience can feel the disrespect 
-                toward Othello from other characters. We can sense how he is given less room to speak, less respect from other characters, and how his mental state deteriators over the
-                 course of the story. These trends are not just narrative but can be shown through an quanativie approach to analysing the text. </p>   
+            <p class="tabbed-paragraph"> Othello, despite being the titular character, speaks less than his antagonist Iago. 
+                We can see how Iago’s speech infects Othello’s thinking as the negative sentiment of Othello’s 
+                line increases as the play goes on. Othello, despite having the play named after him, is often not addressed 
+                by his name by the other characters. Othello is not afforded the same space to express or respect that other characters 
+                like Hamlet or Richard the III are. The play should be centered around Othello’s experiences, Othello’s story, 
+                but instead it is centered around other characters actions. </p>   
                  <p class="tabbed-paragraph">    
-                Othello despite being the titular character has speakers less than his antagonist Iago, and we can see how Iago’s speech infects Othello’s thinking as the negative 
-                sentiment of Othello’s line increases as the play goes on. Othello despite having the play named after him is often not addressed by his name by the characters around 
-                him. Othello is not afford the same space to express or respect that other characters like Hamlet or Richard the III are.
-                </p>      
+                    When reading or watching Othello the audience can feel the disrespect toward Othello from other characters. 
+                    We can sense how he is given less room to speak, less respect from other characters, and how his mental state 
+                    deteriorates over the course of the story. These feelings are not just narrative but can be shown through a 
+                    quantitative approach to analysing the text. Othello is marginalized and othered not just by characters in 
+                    the play but the text of the play itself which I have shown through these visualizations. </p>      
         </div>
     </section>
 
@@ -269,11 +326,7 @@
                 Stage directions have been discarded. </p>
         </div>    
             
-
-       
     </section> 
-      
-   
   
 
 
